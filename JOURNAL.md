@@ -1,13 +1,13 @@
 ---
 title: "HydroFlow"
 author: "TheAbsoluteMin"
-description: "An autonomous real-time pocket handwriting robot on wheels!"
+description: "Desktop AC Revisioned"
 created_at: "2026-06-17"
 ---
 
-# GhostWriter Development Log
+# HydroFlow Development Log
 
-## Log 1: June 11, 2026 - Schematics and PCB - 6.5 hours
+## Log 1: June 17, 2026 - Schematics and PCB - 6.5 hours
 Timelapse <a href="https://lapse.hackclub.com/timelapse/Oom849_IEaSS">link</a>.
 
 Welcome! The story of HydroFlow begins three years ago... ever since the central AC system of my house broke down. For three summers, I had to lie in bed in the smothering heat. For three summers, I had to rely on cheap fans with ice. For three summers, I had to think of some way to stay cool without spending too much money nor electricity... That all changed this summer when I figured out that I could reverse engineer those cheap fans. Knowing the potential funding by the Hack Club organization, I decided it was time HydroFlow was born.
