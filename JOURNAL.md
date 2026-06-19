@@ -17,10 +17,27 @@ Specifically, today, I designed the schematics and custom PCB board for my deskt
 <img width="1836" height="694" alt="image" src="https://github.com/user-attachments/assets/3e14bf40-7e3c-4c5c-974f-e664fa262a31" />
 <img width="1479" height="824" alt="image" src="https://github.com/user-attachments/assets/ad89a049-f560-404f-9eb4-6b04babd3904" />
 
-## Struggles:
+### Struggles:
 My biggest roadblock was managing the physical space and the power constraints on a small, horizontal board without causing a system failure. I was scared of experiencing another system brownout like my past stepper motor project, especially while trying to fit a bulky, huge screen backing plate with an oversized voltage booster module and Raspberry Pi Pico 2. On top of that, KiCad kept throwing me critical design errors!
 
 ### Future work:
 With some simple math, I made sure that my 5 volt power source had enough headroom, and I finally fit everything in the PCB! I look forward to adding mounting screw holes and exporting my PCB so that I can begin to work on the CAD for the case design!
+
+---
+
+## Log 2: June 18, 2026 - CAD Design - 3.5 hours
+Timelapse <a href="https://lapse.hackclub.com/timelapse/BJVgF5JaslK2">link</a>.
+
+After making a minor update to my PCB board regarding some GND routing, I began to work on the CAD design for HydroFlow's case. What started as a simple box frame quickly became a test of patience and critical thinking! I had to triple check all the measurements for all my parts again and then work on the details.
+
+<img width="932" height="538" alt="image" src="https://github.com/user-attachments/assets/f093a120-c56f-4e22-8c8c-67f929561b5b" />
+
+### Struggles:
+The most difficult part was designing the snap fits for my copper tubing in the back! I really want to loop each row of tubing in the back as close together as possible, but I am not sure how strong the copper tubing is... I will design with theoretical numbers for now, and when I get the actual parts, I know that I will have to go through all the CAD design measurements again!!! Oh, the many hours of repetitive tasks! Yet, they teach me so much.
+
+<img width="708" height="713" alt="image" src="https://github.com/user-attachments/assets/4a84b556-72be-4f0a-bb70-9135a6a69008" />
+
+### Future work:
+Next time, I will continue to design the case and its interior, including holes for all the wiring and components for HydroFlow.
 
 ---
