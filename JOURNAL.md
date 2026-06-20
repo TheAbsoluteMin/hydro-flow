@@ -41,3 +41,21 @@ The most difficult part was designing the snap fits for my copper tubing in the 
 Next time, I will continue to design the case and its interior, including holes for all the wiring and components for HydroFlow.
 
 ---
+
+## Log 3: June 19, 2026 - CAD Design Completion - 2 hours
+Timelapse <a href="https://lapse.hackclub.com/timelapse/JToWWzL-IyvG">link</a>.
+
+With two more hours, I integrated the PCB board into my design for scaling, and I carved out some more holes for the wiring of the sensors throughout HydroFlow's case. Finally, after so much time struggling with learning how to use Autodesk Fusion, the model was completed! I even figured out how to add color to my 3D design!
+
+<img width="627" height="764" alt="image" src="https://github.com/user-attachments/assets/76c5c52d-5d40-4cd9-af89-bca0d8e5b0bf" />
+<img width="602" height="878" alt="image" src="https://github.com/user-attachments/assets/5e59c8ef-d33b-4f32-a1b7-277889fcaf6a" />
+
+### Struggles:
+It was difficult trying to control exterior components, like the PCB step file, as I had to configure it so that I could actually edit it and move it to the correct location in the model. Furthermore, ensuring that all the parts were in the right place with accurate and precise dimensions was a nightmare!
+
+<img width="726" height="721" alt="image" src="https://github.com/user-attachments/assets/404420a5-b2a5-44d1-8003-f902ac5fd126" />
+
+### Future work:
+After this milestone, I will begin to work on the code that brings my smart custom AC fan to life!
+
+---
