@@ -1,7 +1,7 @@
 ---
 title: "HydroFlow"
 author: "TheAbsoluteMin"
-description: "Desktop AC Revisioned"
+description: "Closed-loop, radiator-style revisioned desktop AC."
 created_at: "2026-06-17"
 ---
 
@@ -17,6 +17,8 @@ Specifically, today, I designed the schematics and custom PCB board for my deskt
 <img width="1836" height="694" alt="image" src="https://github.com/user-attachments/assets/3e14bf40-7e3c-4c5c-974f-e664fa262a31" />
 <img width="1479" height="824" alt="image" src="https://github.com/user-attachments/assets/ad89a049-f560-404f-9eb4-6b04babd3904" />
 
+A key feature of my PCB included the use of different track widths for the power lines and data lines. Since my project included an MT3608 DC-DC Step-Up Boost Module to boost my 5 volt input power to 12 volts for the 12 volt rated fan, I had to maintain a thick track width of about 1mm. On the other hand, the data lines remained at a minimal 0.25mm width.
+
 ### Struggles:
 My biggest roadblock was managing the physical space and the power constraints on a small, horizontal board without causing a system failure. I was scared of experiencing another system brownout like my past stepper motor project, especially while trying to fit a bulky, huge screen backing plate with an oversized voltage booster module and Raspberry Pi Pico 2. On top of that, KiCad kept throwing me critical design errors!
 
@@ -28,7 +30,7 @@ With some simple math, I made sure that my 5 volt power source had enough headro
 ## Log 2: June 18, 2026 - CAD Design - 3.5 hours
 Timelapse <a href="https://lapse.hackclub.com/timelapse/BJVgF5JaslK2">link</a>.
 
-After making a minor update to my PCB board regarding some GND routing, I began to work on the CAD design for HydroFlow's case. What started as a simple box frame quickly became a test of patience and critical thinking! I had to triple check all the measurements for all my parts again and then work on the details.
+I had to make a minor update to my PCB board regarding some GND routing. I intentionally split GND into GND (common) and GND_POWER in order to separate the GND noise from the fan from the rest of the components of HydroFlow. With this, I only allowed a single connection at the USB GND pad where all the noise from the fan's GND line could dump and connect to the common GND. I also began to work on the CAD design for HydroFlow's case. What started as a simple box frame quickly became a test of patience and critical thinking! I had to triple check all the measurements for all my parts again and then work on the details.
 
 <img width="932" height="538" alt="image" src="https://github.com/user-attachments/assets/f093a120-c56f-4e22-8c8c-67f929561b5b" />
 
@@ -57,5 +59,22 @@ It was difficult trying to control exterior components, like the PCB step file, 
 
 ### Future work:
 After this milestone, I will begin to work on the code that brings my smart custom AC fan to life!
+
+---
+
+## Log 4: June 28, 2026 - Code - 2.5 hours
+Hours logged with Hackatime
+
+Today, I decided to work on the code for HydroFlow, and I learned a lot through coding references on how to bring my hardware modules to life through CircuitPython from defining pins of the fan and pump module to creating functions for the DHT22 and NTC temperature sensors so they could measure the temperature. In the code loop, HydroFlow uses the data from the temperature sensors to automatically adapt to the environment temperature and humidity and the ice pack and water temperature. Specifically, in the beginning the pump and fan speeds are slow, but as the ice melts and gets hotter, the pump pushes water faster and the fan speed increases in order to maintain the same level of chill as that of when the ice was fresh. This smart loop serves to improve on the design of static fans by balancing the coolness of the air output and the ice life.
+
+<img width="1848" height="810" alt="image" src="https://github.com/user-attachments/assets/82a82b6c-190a-4fbc-903e-087a07569c47" />
+
+### Struggles:
+I spent a lot of time learning hardware specific code that I was unfamiliar with. For example, I did not know that the GC9A01 LCD display screen required many setup and definition functions in order to get it to display simple temperature metrics! It was also not easy to use the Steinhart–Hart equation to accurately read the NTC temperature sensor!
+
+<img width="587" height="388" alt="image" src="https://github.com/user-attachments/assets/176b21e6-0d22-4889-9262-4359293519e8" />
+
+### Future work:
+As I have finished the design for HydroFlow, I look forward to actually ordering the parts and building the entire project!
 
 ---
