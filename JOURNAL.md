@@ -7,7 +7,7 @@ created_at: "2026-06-17"
 
 # HydroFlow Development Log
 
-## Log 1: June 17, 2026 - Schematics and PCB - 6.5 hours
+## Log 1: June 17, 2026 - Schematics and PCB - 7 hours
 Timelapse <a href="https://lapse.hackclub.com/timelapse/Oom849_IEaSS">link</a>.
 
 Welcome! The story of HydroFlow begins three years ago... ever since the central AC system of my house broke down. For three summers, I had to lie in bed in the smothering heat. For three summers, I had to rely on cheap fans with ice. For three summers, I had to think of some way to stay cool without spending too much money nor electricity... That all changed this summer when I figured out that I could reverse engineer those cheap fans. Knowing the potential funding by the Hack Club organization, I decided it was time HydroFlow was born.
@@ -27,7 +27,7 @@ With some simple math, I made sure that my 5 volt power source had enough headro
 
 ---
 
-## Log 2: June 18, 2026 - CAD Design - 3.5 hours
+## Log 2: June 18, 2026 - CAD Design - 4 hours
 Timelapse <a href="https://lapse.hackclub.com/timelapse/BJVgF5JaslK2">link</a>.
 
 I had to make a minor update to my PCB board regarding some GND routing. I intentionally split GND into GND (common) and GND_POWER in order to separate the GND noise from the fan from the rest of the components of HydroFlow. With this, I only allowed a single connection at the USB GND pad where all the noise from the fan's GND line could dump and connect to the common GND. I also began to work on the CAD design for HydroFlow's case. What started as a simple box frame quickly became a test of patience and critical thinking! I had to triple check all the measurements for all my parts again and then work on the details.
@@ -44,7 +44,7 @@ Next time, I will continue to design the case and its interior, including holes 
 
 ---
 
-## Log 3: June 19, 2026 - CAD Design Completion - 2 hours
+## Log 3: June 19, 2026 - CAD Design Completion - 2.1 hours
 Timelapse <a href="https://lapse.hackclub.com/timelapse/JToWWzL-IyvG">link</a>.
 
 With two more hours, I integrated the PCB board into my design for scaling, and I carved out some more holes for the wiring of the sensors throughout HydroFlow's case. Finally, after so much time struggling with learning how to use Autodesk Fusion, the model was completed! I even figured out how to add color to my 3D design!
